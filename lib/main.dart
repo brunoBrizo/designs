@@ -1,4 +1,5 @@
-import 'package:designs/src/pages/menu_main_page.dart';
+import 'package:designs/src/pages/launcher_page.dart';
+import 'package:designs/src/pages/launcher_tablet_page.dart';
 import 'package:designs/src/providers/layout_provider.dart';
 import 'package:designs/src/theme/theme_provider.dart';
 import 'package:flutter/material.dart';
@@ -30,9 +31,9 @@ class MyApp extends StatelessWidget {
           print('orientation: $orientation');
           final size = MediaQuery.of(context).size;
           if (size.width > 500) {
-            return MenuMainScreen();
+            return LauncherTabletPage();
           } else {
-            return MenuMainScreen();
+            return LauncherPage();
           }
         },
       ),
